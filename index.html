@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hari Paruchuri</title>
+<meta name="description" content="Hari Paruchuri works with experts to shape, extend and amplify their arguments and strengths: books, talks and content systems.">
+<meta property="og:title" content="Hari Paruchuri">
+<meta property="og:description" content="Books, talks and content systems for experts who know more than they have written down.">
+<meta property="og:image" content="portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f4ef; --ink:#1b1b1a; --muted:#5f5d57; --line:#dcd8cf; --card:#fffdf9; --accent:#7a4b22;
+    --serif:"Newsreader", Georgia, serif; --sans:"Inter", system-ui, -apple-system, sans-serif;
+    --w:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:var(--w);margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(246,244,239,.94);backdrop-filter:blur(6px);z-index:5}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+  .name{font-family:var(--serif);font-size:20px;text-decoration:none;font-weight:500}
+  nav a{font-size:14px;text-decoration:none;color:var(--muted);margin-left:22px}
+  nav a:hover{color:var(--ink)}
+  section{padding:72px 0;border-bottom:1px solid var(--line)}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;margin:0}
+  h1{font-size:clamp(34px,5vw,54px);line-height:1.12}
+  h2{font-size:clamp(28px,3.4vw,38px);line-height:1.15;margin-bottom:20px}
+  h3{font-size:21px;line-height:1.3}
+  .kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:14px}
+  p{margin:0 0 16px}
+  .muted{color:var(--muted)}
+  /* hero */
+  .hero{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:center;padding:80px 0 72px}
+  .hero .sub{font-size:20px;margin-top:22px;max-width:34em}
+  .hero .three{font-size:15px;color:var(--muted);margin-top:18px;max-width:36em}
+  .hero img{width:100%;height:auto;display:block;filter:grayscale(1);border-radius:2px}
+  /* chooser */
+  .doors{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+  .door{display:block;background:var(--card);border:1px solid var(--line);padding:24px;text-decoration:none;transition:border-color .15s, transform .15s}
+  .door:hover{border-color:var(--ink);transform:translateY(-2px)}
+  .door h3{margin-bottom:8px}
+  .door p{font-size:15px;color:var(--muted);margin:0}
+  .door .go{display:inline-block;margin-top:16px;font-size:13px;font-weight:600;color:var(--accent)}
+  /* proof strip */
+  .proof{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:40px 0}
+  .proof .n{font-family:var(--serif);font-size:44px;line-height:1}
+  .proof .l{font-size:14px;color:var(--muted);margin-top:8px}
+  /* sections */
+  .split{display:grid;grid-template-columns:1.2fr 1fr;gap:56px}
+  .lead{font-size:19px}
+  .books{display:grid;gap:14px}
+  .book{background:var(--card);border:1px solid var(--line);padding:18px 20px}
+  .book em{font-family:var(--serif);font-style:italic;font-size:19px}
+  .book span{display:block;font-size:14px;color:var(--muted);margin-top:4px}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:36px 0 8px;border-top:1px solid var(--line)}
+  .step{padding:18px 18px 0 0}
+  .step b{display:block;font-family:var(--serif);font-weight:500;font-size:18px;margin-bottom:6px}
+  .step span{font-size:15px;color:var(--muted)}
+  .give{font-size:15px;color:var(--muted);margin-top:18px}
+  .cta{display:inline-block;margin-top:24px;background:var(--ink);color:var(--bg);text-decoration:none;padding:13px 22px;font-size:15px;font-weight:500;border-radius:2px}
+  .cta:hover{background:var(--accent)}
+  .nums{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .nums div{border-top:1px solid var(--ink);padding-top:12px}
+  .nums b{display:block;font-family:var(--serif);font-weight:400;font-size:38px;line-height:1}
+  .nums span{font-size:14px;color:var(--muted)}
+  .note{font-size:13px;color:var(--muted);margin-top:18px}
+  .flow{display:flex;align-items:stretch;gap:0;margin-top:6px}
+  .flow div{flex:1;border:1px solid var(--line);background:var(--card);padding:16px}
+  .flow div + div{border-left:none}
+  .flow b{display:block;font-family:var(--serif);font-weight:500;font-size:18px}
+  .flow span{font-size:14px;color:var(--muted)}
+  .not{font-size:14px;color:var(--muted);margin-top:18px;border-left:2px solid var(--line);padding-left:12px}
+  /* writing */
+  .writing{list-style:none;padding:0;margin:0;max-width:760px}
+  .writing li{padding:18px 0;border-top:1px solid var(--line)}
+  .writing li:last-child{border-bottom:1px solid var(--line)}
+  .writing em{font-family:var(--serif);font-size:19px}
+  .writing a{text-decoration-color:var(--line);text-underline-offset:3px}
+  .writing a:hover{text-decoration-color:var(--ink)}
+  .writing span{display:block;font-size:14px;color:var(--muted);margin-top:2px}
+  /* about */
+  .about{display:grid;grid-template-columns:120px 1fr;gap:28px;align-items:start;max-width:760px}
+  .about img{width:120px;height:120px;object-fit:cover;object-position:50% 20%;filter:grayscale(1);border-radius:50%}
+  .about p{font-size:18px}
+  /* close */
+  .close{text-align:center;padding:96px 0}
+  .close h2{max-width:18em;margin:0 auto}
+  footer{padding:28px 0;font-size:13px;color:var(--muted)}
+  @media (max-width:860px){
+    .hero{grid-template-columns:1fr;gap:32px;padding:48px 0}
+    .hero img{max-width:220px}
+    .doors{grid-template-columns:1fr}
+    .proof{grid-template-columns:1fr 1fr}
+    .split{grid-template-columns:1fr;gap:32px}
+    .steps{grid-template-columns:1fr 1fr;row-gap:18px}
+    section{padding:56px 0}
+  }
+  @media (max-width:520px){
+    body{font-size:16px}
+    nav a{margin-left:14px}
+    .flow{flex-direction:column}
+    .flow div + div{border-left:1px solid var(--line);border-top:none}
+    .steps{grid-template-columns:1fr}
+    .about{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="name" href="#top">Hari Paruchuri</a>
+    <nav><a href="#books">Books</a><a href="#stages">Stages</a><a href="#systems">Systems</a></nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <h1>I work with experts to shape, extend and amplify their arguments and strengths.</h1>
+        <p class="sub">Books, keynotes and content systems for founders, specialists and speakers who know more than they have written down.</p>
+        <p class="three">Twenty-two years as an advertising creative director. Three books since. The work is always the same: find the one clear shape a large body of knowledge wants to take.</p>
+      </div>
+      <img src="portrait.jpg" alt="Portrait of Hari Paruchuri" width="900" height="1125">
+    </div>
+  </div>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="doors">
+        <a class="door" href="#books">
+          <h3>I have a book in me.</h3>
+          <p>Your expertise, your voice, a manuscript you would sign.</p>
+          <span class="go">Books</span>
+        </a>
+        <a class="door" href="#stages">
+          <h3>I have a stage coming up.</h3>
+          <p>Keynotes, masterclasses and workshops built as products.</p>
+          <span class="go">Stages</span>
+        </a>
+        <a class="door" href="#systems">
+          <h3>My content keeps repeating itself.</h3>
+          <p>A content system you keep as files, measured before and after.</p>
+          <span class="go">Systems</span>
+        </a>
+      </div>
+      <div class="proof">
+        <div><div class="n">3</div><div class="l">published books</div></div>
+        <div><div class="n">3</div><div class="l">bylined features in national business press</div></div>
+        <div><div class="n">22</div><div class="l">years as an advertising creative director</div></div>
+        <div><div class="n">11</div><div class="l">speaking subjects built, for rooms of up to 15,000</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="books">
+    <div class="wrap">
+      <div class="kicker">Books</div>
+      <div class="split">
+        <div>
+          <h2>Your book, in your voice, on a spine a reader can use.</h2>
+          <p class="lead">Most expert books fail before the first chapter: they are a life told in order when the reader wanted a method, or a method with no life in it.</p>
+          <p>The first thing I do is choose which book yours is, with you. Then the spine: one claim, a chapter map that says what each chapter proves, and one sample chapter in your voice. You approve the spine before the rest is written.</p>
+        </div>
+        <div class="books">
+          <div class="book"><em>AI: The Reverse GoldRush</em><span>Co-authored business book. 12 chapters, about 39,000 words. 2025.</span></div>
+          <div class="book"><em>One Step at a Time</em><span>A physician-entrepreneur's memoir, about 40,000 words. Developmental collaborator, named in the acknowledgements. 2025.</span></div>
+          <div class="book"><em>DiviSeema Business Fables</em><span>Co-authored. Seventeen fables that teach business to readers aged 8 to 14. 2025.</span></div>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="step"><b>Conversations</b><span>Eight to ten, recorded.</span></div>
+        <div class="step"><b>Spine</b><span>Claim, chapter map and a sample chapter, approved by you.</span></div>
+        <div class="step"><b>Draft</b><span>Chapter by chapter, with you reading as it comes.</span></div>
+        <div class="step"><b>Revision</b><span>A manuscript ready for an agent, a press or self-publishing.</span></div>
+      </div>
+      <p class="give">What you give: about an hour a week.</p>
+      <a class="cta" href="https://www.upwork.com/freelancers/~0138105934cf61d0a6">Talk about your book</a>
+    </div>
+  </section>
+
+  <section id="stages">
+    <div class="wrap">
+      <div class="kicker">Stages</div>
+      <div class="split">
+        <div>
+          <h2>Talks built as products, not written as speeches.</h2>
+          <p class="lead">A keynote, a masterclass and a workshop on the same subject are three different products.</p>
+          <p>I build the research pack, the argument, the script, the deck, the handout and the exercises as one system, so a subject can be delivered at 15 minutes or at 90 without being rewritten.</p>
+          <a class="cta" href="https://www.upwork.com/freelancers/~0138105934cf61d0a6">Plan a talk</a>
+        </div>
+        <div>
+          <div class="nums">
+            <div><b>11</b><span>subjects built for one professional speaker</span></div>
+            <div><b>6</b><span>stage deliveries in 2026</span></div>
+            <div><b>15,000</b><span>people in the largest room</span></div>
+            <div><b>15</b><span>drafts behind one 15-minute keynote</span></div>
+          </div>
+          <p class="note">The speaker's name stays private by agreement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="systems">
+    <div class="wrap">
+      <div class="kicker">Content systems</div>
+      <div class="split">
+        <div>
+          <h2>When your content starts repeating itself.</h2>
+          <p class="lead">AI makes content cheap, and sameness cheaper.</p>
+          <p>I find where the repetition enters: the premise, the structure, the phrasing, the prompt line behind it. Then I hand over a system you keep as files: a codebook, a library in a spreadsheet, a prompt file for each stage, and a one-page run protocol. Nothing to install. A number before, a number after.</p>
+          <a class="cta" href="https://www.upwork.com/freelancers/~0138105934cf61d0a6">Describe your content problem</a>
+        </div>
+        <div>
+          <div class="flow">
+            <div><b>Diagnose</b><span>where the sameness comes from</span></div>
+            <div><b>Design</b><span>codebook, library, prompts</span></div>
+            <div><b>Hand over</b><span>files you own and run</span></div>
+          </div>
+          <p class="not">What I do not do: software builds, integrations, or running your channels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="writing">
+    <div class="wrap">
+      <div class="kicker">Writing</div>
+      <h2>Recent writing</h2>
+      <ul class="writing">
+        <li><a href="https://education.economictimes.indiatimes.com/news/higher-education/going-forward-the-rise-of-forward-deployed-careers-and-the-future-of-professional-work-in-the-age-of-ai/134051461" target="_blank" rel="noopener"><em>Going forward: the rise of forward deployed careers and the future of professional work in the age of AI</em></a><span>The Economic Times (ETEducation), September 2026. Co-authored.</span></li>
+        <li><em>Two features in BW Businessworld's Marketing Whitebook</em><span>2021-22 and 2023-24 editions. Co-authored.</span></li>
+        <li><em>The Great Unbundling</em><span>An 8,000-word feature on how professional services came apart, researched across thirteen countries, with 74 endnotes.</span></li>
+        <li><em>CoPlay: AI for the non-technical</em><span>Upcoming book.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="kicker">About</div>
+      <div class="about">
+        <img src="portrait.jpg" alt="" width="120" height="120">
+        <div>
+          <p>Former co-founder and creative director of Trikaal Advertising, where for twenty-two years the work was making companies say one thing clearly. Founder of tihnkering Ltd, where since 2019 I have done the same for people: experts, founders, speakers.</p>
+          <p class="muted" style="font-size:16px">I write from Hyderabad and work with clients anywhere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" style="border-bottom:none">
+    <div class="wrap">
+      <h2>Tell me what you know that is not written down yet.</h2>
+      <a class="cta" href="https://www.upwork.com/freelancers/~0138105934cf61d0a6">Work with me on Upwork</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Hari Paruchuri · tihnkering</div>
+</footer>
+
+</body>
+</html>
