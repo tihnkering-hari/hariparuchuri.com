@@ -89,6 +89,14 @@
   .flow b{display:block;font-family:var(--serif);font-weight:500;font-size:18px}
   .flow span{font-size:14px;color:var(--muted)}
   .not{font-size:14px;color:var(--muted);margin-top:18px;border-left:2px solid var(--line);padding-left:12px}
+  /* client words */
+  .said{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px}
+  .said figure{margin:0;background:var(--card);border:1px solid var(--line);padding:24px 24px 20px;display:flex;flex-direction:column}
+  .said blockquote{margin:0;font-family:var(--serif);font-size:19px;line-height:1.45;flex:1}
+  .said figcaption{font-size:13px;color:var(--muted);margin-top:16px;border-top:1px solid var(--line);padding-top:10px}
+  .said-foot{font-size:14px;color:var(--muted);margin-top:14px}
+  .said-foot a{text-decoration-color:var(--line);text-underline-offset:3px}
+  .said-foot a:hover{text-decoration-color:var(--ink)}
   /* about */
   .about{max-width:760px}
   .about p{font-size:18px}
@@ -103,6 +111,7 @@
     .hero img{max-width:220px}
     .proof{grid-template-columns:1fr 1fr}
     .split{grid-template-columns:1fr;gap:36px}
+    .said{grid-template-columns:1fr}
     .steps{grid-template-columns:1fr 1fr;row-gap:18px}
     section{padding:56px 0}
     header .wrap{flex-direction:column;align-items:flex-start;padding-top:10px;padding-bottom:10px;gap:6px}
@@ -115,6 +124,7 @@
     .cover figcaption{font-size:12px}
     .cover figcaption em{font-size:14px}
     .flow{flex-direction:column}
+    .said{grid-template-columns:1fr}
     .flow div + div{border-left:1px solid var(--line);border-top:none}
     .steps{grid-template-columns:1fr}
   }
@@ -280,6 +290,18 @@
           <p class="not">What I do not do: software builds, integrations, or running your channels.</p>
         </div>
       </div>
+      <div class="sub-h">What the client said</div>
+      <div class="said" style="margin-top:12px">
+        <figure>
+          <blockquote>&ldquo;The analysis was detailed, practical, and went well beyond surface-level comparisons. He was careful not to overstate the data, identified useful structural and repetition patterns, and communicated clearly throughout.&rdquo;</blockquote>
+          <figcaption>The paid trial: diagnosing a storytelling page's content. September 2026.</figcaption>
+        </figure>
+        <figure>
+          <blockquote>&ldquo;He turned a messy creative workflow into a structured system with clear prompts, memory, anti-repetition checks, QC, testing, and documentation. &hellip; When I found issues in some outputs, he traced the actual cause, fixed the system, reran the tests, and documented everything clearly instead of just patching the individual examples.&rdquo;</blockquote>
+          <figcaption>The build that followed: prompt system, story library and acceptance tests. October 2026.</figcaption>
+        </figure>
+      </div>
+      <p class="said-foot">One client, two contracts. Both reviews are on my <a href="https://www.upwork.com/freelancers/~0138105934cf61d0a6">Upwork profile</a>.</p>
     </div>
   </section>
 
