@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Work samples · Hari Paruchuri</title>
+<meta name="description" content="Hari Paruchuri works with experts to shape, extend and amplify their arguments and strengths: books, ghostwriting, thought leadership and local AI workflows.">
+<meta property="og:title" content="Hari Paruchuri">
+<meta property="og:description" content="Books, ghostwriting, thought leadership and local AI workflows for experts who know more than they have written down.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f4ef; --ink:#1b1b1a; --muted:#5f5d57; --line:#dcd8cf; --card:#fffdf9; --accent:#7a4b22;
+    --serif:"Newsreader", Georgia, serif; --sans:"Inter", system-ui, -apple-system, sans-serif;
+    --w:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:var(--w);margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(246,244,239,.95);backdrop-filter:blur(6px);z-index:5}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;min-height:60px;gap:16px}
+  .name{font-family:var(--serif);font-size:20px;text-decoration:none;font-weight:500;white-space:nowrap}
+  nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px 20px}
+  nav a{font-size:14px;text-decoration:none;color:var(--muted)}
+  nav a:hover{color:var(--ink)}
+  section{padding:72px 0;border-bottom:1px solid var(--line);scroll-margin-top:64px}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;margin:0}
+  h1{font-size:clamp(34px,5vw,54px);line-height:1.12}
+  h2{font-size:clamp(28px,3.4vw,38px);line-height:1.15;margin-bottom:20px}
+  h3{font-size:21px;line-height:1.3}
+  .kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:14px}
+  p{margin:0 0 16px}
+  .muted{color:var(--muted)}
+  .lead{font-size:19px}
+  /* hero */
+  .hero{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:center;padding:80px 0 64px}
+  .hero .sub{font-size:20px;margin-top:22px;max-width:34em}
+  .hero .three{font-size:15px;color:var(--muted);margin-top:18px;max-width:36em}
+  .hero img{width:100%;height:auto;display:block;filter:grayscale(1);border-radius:2px}
+  /* doors */
+  .doors{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .door{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);padding:22px;text-decoration:none;transition:border-color .15s, transform .15s}
+  .door:hover{border-color:var(--ink);transform:translateY(-2px)}
+  .door h3{font-size:20px;margin-bottom:8px}
+  .door p{font-size:14px;color:var(--muted);margin:0;flex:1}
+  .door .go{margin-top:14px;font-size:13px;font-weight:600;color:var(--accent)}
+  /* proof strip */
+  .proof{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:40px 0 0}
+  .proof .n{font-family:var(--serif);font-size:44px;line-height:1}
+  .proof .l{font-size:14px;color:var(--muted);margin-top:8px}
+  /* layout */
+  .split{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+  /* covers */
+  .covers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .cover{margin:0}
+  .cover img{width:100%;height:auto;display:block;box-shadow:0 1px 2px rgba(0,0,0,.08),0 8px 24px rgba(0,0,0,.10);border-radius:2px;background:#e9e5dc}
+  .cover .ph{aspect-ratio:2/3;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;background:var(--card);border:1px dashed var(--line);font-family:var(--serif);font-size:18px;line-height:1.25;color:var(--muted)}
+  .cover figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.45}
+  .cover figcaption em{display:block;font-family:var(--serif);font-size:16px;color:var(--ink)}
+  .single{max-width:220px}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);margin:36px 0 8px;border-top:1px solid var(--line)}
+  .step{padding:18px 18px 0 0}
+  .step b{display:block;font-family:var(--serif);font-weight:500;font-size:18px;margin-bottom:6px}
+  .step span{font-size:15px;color:var(--muted)}
+  .give{font-size:15px;color:var(--muted);margin-top:18px}
+  .cta{display:inline-block;margin-top:24px;background:var(--ink);color:var(--bg);text-decoration:none;padding:13px 22px;font-size:15px;font-weight:500;border-radius:2px}
+  .cta:hover{background:var(--accent)}
+  .nums{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:8px}
+  .nums div{border-top:1px solid var(--ink);padding-top:12px}
+  .nums b{display:block;font-family:var(--serif);font-weight:400;font-size:36px;line-height:1}
+  .nums span{font-size:14px;color:var(--muted)}
+  .note{font-size:13px;color:var(--muted);margin-top:14px}
+  .list{list-style:none;padding:0;margin:0}
+  .list li{padding:16px 0;border-top:1px solid var(--line)}
+  .list li:last-child{border-bottom:1px solid var(--line)}
+  .list em{font-family:var(--serif);font-size:18px}
+  .list span{display:block;font-size:14px;color:var(--muted);margin-top:2px}
+  .list a{text-decoration-color:var(--line);text-underline-offset:3px}
+  .list a:hover{text-decoration-color:var(--ink)}
+  .sub-h{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:40px 0 4px}
+  .flow{display:flex;align-items:stretch}
+  .flow div{flex:1;border:1px solid var(--line);background:var(--card);padding:16px}
+  .flow div + div{border-left:none}
+  .flow b{display:block;font-family:var(--serif);font-weight:500;font-size:18px}
+  .flow span{font-size:14px;color:var(--muted)}
+  .not{font-size:14px;color:var(--muted);margin-top:18px;border-left:2px solid var(--line);padding-left:12px}
+  /* client words */
+  .said{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px}
+  .said figure{margin:0;background:var(--card);border:1px solid var(--line);padding:24px 24px 20px;display:flex;flex-direction:column}
+  .said blockquote{margin:0;font-family:var(--serif);font-size:19px;line-height:1.45;flex:1}
+  .said figcaption{font-size:13px;color:var(--muted);margin-top:16px;border-top:1px solid var(--line);padding-top:10px}
+  .said-foot{font-size:14px;color:var(--muted);margin-top:14px}
+  .said-foot a{text-decoration-color:var(--line);text-underline-offset:3px}
+  .said-foot a:hover{text-decoration-color:var(--ink)}
+  /* about */
+  .about{max-width:760px}
+  .about p{font-size:18px}
+  .close{text-align:center;padding:96px 0;border-bottom:none}
+  .close h2{max-width:18em;margin:0 auto}
+  footer{padding:28px 0;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+  @media (max-width:960px){
+    .doors{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:860px){
+    .hero{grid-template-columns:1fr;gap:32px;padding:48px 0}
+    .hero img{max-width:220px}
+    .proof{grid-template-columns:1fr 1fr}
+    .split{grid-template-columns:1fr;gap:36px}
+    .said{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr 1fr;row-gap:18px}
+    section{padding:56px 0}
+    header .wrap{flex-direction:column;align-items:flex-start;padding-top:10px;padding-bottom:10px;gap:6px}
+    nav{justify-content:flex-start;gap:4px 16px}
+  }
+  @media (max-width:520px){
+    body{font-size:16px}
+    .doors{grid-template-columns:1fr}
+    .covers{gap:12px}
+    .cover figcaption{font-size:12px}
+    .cover figcaption em{font-size:14px}
+    .flow{flex-direction:column}
+    .said{grid-template-columns:1fr}
+    .flow div + div{border-left:1px solid var(--line);border-top:none}
+    .steps{grid-template-columns:1fr}
+  }
+  .shots{display:grid;grid-template-columns:1fr;gap:26px;margin-top:20px;max-width:780px}
+  .shots img{width:100%;height:auto;display:block;filter:drop-shadow(0 4px 10px rgba(0,0,0,.12))}
+  .more{display:inline-block;margin-top:24px;margin-left:18px;font-size:15px;color:var(--ink);text-underline-offset:3px;text-decoration-color:var(--line)}
+  .more:hover{text-decoration-color:var(--ink)}
+  @media (max-width:860px){.shots{grid-template-columns:1fr}.more{margin-left:0;display:block;margin-top:14px}}
+</style>
+<style>
+  .jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .jump a{border:1px solid var(--ink);padding:9px 16px;font-size:15px;color:var(--ink);text-decoration:none;border-radius:2px}
+  .jump a:hover{background:var(--ink);color:var(--bg)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}
+  .card{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column}
+  .card img{width:100%;height:auto;display:block;border-bottom:1px solid var(--line)}
+  .card .b{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+  .card h3{font-family:var(--serif);font-size:20px;font-weight:400;margin:0 0 6px;line-height:1.25}
+  .card p{font-size:14.5px;color:var(--muted);margin:0;flex:1}
+  .card a.pdf{margin-top:14px;font-size:14px;color:var(--ink);text-underline-offset:3px;text-decoration-color:var(--line)}
+  .card a.pdf:hover{text-decoration-color:var(--ink)}
+  .grp{margin-top:64px;scroll-margin-top:80px}
+  .grp h2{margin:0}
+  @media (max-width:960px){.cards{grid-template-columns:1fr 1fr}}
+  @media (max-width:560px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="name" href="index.html">Hari Paruchuri</a>
+    <nav>
+      <a href="index.html#books">Writing Books</a>
+      <a href="index.html#ghostwriting">Ghostwriting Books</a>
+      <a href="index.html#thought-leadership">Thought Leadership</a>
+      <a href="index.html#ai-workflows">Local AI Workflows</a>
+      <a href="work.html">Work</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section style="padding-top:56px">
+    <div class="wrap">
+      <div class="kicker">Work samples</div>
+      <h2>The work behind each of the four doors.</h2>
+      <p class="lead" style="max-width:40em">Each card is a short PDF: what the work was, how it was built, and what I did. Client names are left out where they asked.</p>
+      <div class="jump"><a href="#books">Writing Books</a><a href="#ghostwriting">Ghostwriting Books</a><a href="#thought-leadership">Thought Leadership Writing</a><a href="#ai-workflows">Local AI Workflows</a></div>
+      <div class="grp" id="books"><div class="kicker">Writing Books</div>
+      <div class="cards">
+        <div class="card">
+          <a href="work/30_coplay.pdf" target="_blank" rel="noopener"><img src="work/thumbs/30_coplay.jpg" width="827" height="607" loading="lazy" alt="First page of the card: CoPlay: Work With AI, Not Just Command It"></a>
+          <div class="b">
+            <h3>CoPlay: Work With AI, Not Just Command It</h3>
+            <p>The method I teach: working with AI as a partner rather than a command line, four foundational modes with prompts. Behind the FICCI masterclass, October 2026.</p>
+            <a class="pdf" href="work/30_coplay.pdf" target="_blank" rel="noopener">Open the card (PDF)</a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="work/04_reverse-goldrush.pdf" target="_blank" rel="noopener"><img src="work/thumbs/04_reverse-goldrush.jpg" width="827" height="607" loading="lazy" alt="First page of the card: AI: The Reverse GoldRush"></a>
+          <div class="b">
+            <h3>AI: The Reverse GoldRush</h3>
+            <p>Co-authored business book, 2025: why enterprises stall with AI while individuals win. The argument and the twelve-chapter structure.</p>
+            <a class="pdf" href="work/04_reverse-goldrush.pdf" target="_blank" rel="noopener">Open the card (PDF)</a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="work/09_diviseema.pdf" target="_blank" rel="noopener"><img src="work/thumbs/09_diviseema.jpg" width="827" height="607" loading="lazy" alt="First page of the card: DiviSeema Business Fables"></a>
+          <div class="b">
+            <h3>DiviSeema Business Fables</h3>
+            <p>Seventeen animal fables that each teach children one business idea, with group activities and talk questions. Co-authored, 2025.</p>
+            <a class="pdf" href="work/09_diviseema.pdf" target="_blank" rel="noopener">Open the card (PDF)</a>
+            <a class="pdf" href="work/09b_diviseema-reading-sample.pdf" target="_blank" rel="noopener">Reading sample: one fable (PDF)</a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="work/23_fms-comic.pdf" target="_blank" rel="noopener"><img src="work/thumbs/23_fms-comic.jpg" width="827" height="607" loading="lazy" alt="First page of the card: Cute Smile and the FMS Wizard"></a>
+          <div class="b">
+            <h3>Cute Smile and the FMS Wizard</h3>
+            <p>A 30-page fairy-tale comic for a dental hospital, 1997: children read a story they wanted to finish and met every kind of dentist on the way. Made at Trikaal Advertising.</p>
+            <a class="pdf" href="work/23_fms-comic.pdf" target="_blank" rel="noopener">Open the card (PDF)</a>
+          </div>
+        </div>
+      </div></div>
+      <div class="grp" id="ghostwriting"><div class="kicker">Ghostwriting Books</div>
+      <div class="cards">
+        <div class="card">
+          <a href="work/07_one-step-at-a-time.pdf" target="_blank" rel="noopener"><img src="work/thumbs/07_one-step-at-a-time.jpg" width="827" height="607" loading="lazy" alt="First page of the card: One Step at a Time"></a>
+          <div class="b">
+            <h3>One Step at a Time</h3>
+            <p>A physician-entrepreneur&#x27;s memoir, about 40,000 words. Developmental collaborator: ideation, structure and writing. Named in the acknowledgements, 2025.</p>
+            <a class="pdf" href="work/07_one-step-at-a-time.pdf" target="_blank" rel="noopener">Open the card (PDF)</a>
+          </div>
+        </div>
+      </div></div>
+      <div class="grp" id="thought-leadership"><div class="kicker">Thought Leadership Writing</div>
+      <div class="cards">
+        <div class="card">
+          <a href="work/11_et-feature.pdf" target="_blank" rel="noopener"><img src="work/thumbs/11_et-feature.jpg" width="827" height="607" loading="lazy" alt="First page of the card: Forward deployed careers, in The Economic Times"></a>
+          <div class="b">
+            <h3>Forward deployed careers, in The Economic Times</h3>
+            <p>Co-authored feature for ETEducation, September 2026, on how professional work changes in the age of AI.</p>
+            <a class="pdf" href="work/11_et-feature.pdf" target="_blank" rel="noopener">Open the card (PDF)</a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="work/01_bw-businessworld.pdf" target="_blank" rel="noopener"><img src="work/thumbs/01_bw-businessworld.jpg" width="827" height="607" loading="lazy" alt="First page of the card: Two features in BW Businessworld"></a>
+          <div class="b">
+            <h3>Two features in BW Businessworld</h3>
+            <p>Co-authored for the Marketing Whitebook, 2021-22 and 2023-24: leaders for the metaverse age, and where humans sit in AI-driven marketing.</p>
+            <a class="pdf" href="work/01_bw-businessworld.pdf" target="_blank" rel="noopener">Open the card (PDF)</a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="work/06_great-unbundling.pdf" target="_blank" rel="noopener"><img src="work/thumbs/06_great-unbundling.jpg" width="827" height="607" loading="lazy" alt="First page of the card: The Great Unbundling"></a>
+          <div class="b">
+            <h3>The Great Unbundling</h3>
+            <p>A long research feature on how professional services came apart: thirteen countries, 74 endnotes, two widely repeated figures dropped because they failed verification.</p>
+            <a class="pdf" href="work/06_great-unbundling.pdf" target="_blank" rel="noopener">Open the card (PDF)</a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="work/05_mentorship-series.pdf" target="_blank" rel="noopener"><img src="work/thumbs/05_mentorship-series.jpg" width="827" height="607" loading="lazy" alt="First page of the card: A 10-part LinkedIn mentorship series"></a>
+          <div class="b">
+            <h3>A 10-part LinkedIn mentorship series</h3>
+            <p>About 23,900 words for a senior surgeon, built on one six-beat structure so ten long posts read as one mind. Client anonymised.</p>
+            <a class="pdf" href="work/05_mentorship-series.pdf" target="_blank" rel="noopener">Open the card (PDF)</a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="work/10_cfo-keynote.pdf" target="_blank" rel="noopener"><img src="work/thumbs/10_cfo-keynote.jpg" width="827" height="607" loading="lazy" alt="First page of the card: The CFO as Detective"></a>
+          <div class="b">
+            <h3>The CFO as Detective</h3>
+            <p>A 15-minute keynote for a room of chief financial officers: the research, the argument and the script, for a professional speaker who delivered it.</p>
+            <a class="pdf" href="work/10_cfo-keynote.pdf" target="_blank" rel="noopener">Open the card (PDF)</a>
+          </div>
+        </div>
+      </div></div>
+      <div class="grp" id="ai-workflows"><div class="kicker">Local AI Workflows</div>
+      <div class="cards">
+        <div class="card">
+          <a href="work/25_where-ai-belongs.pdf" target="_blank" rel="noopener"><img src="work/thumbs/25_where-ai-belongs.jpg" width="827" height="607" loading="lazy" alt="First page of the card: Where AI belongs, and where a rule will do"></a>
+          <div class="b">
+            <h3>Where AI belongs, and where a rule will do</h3>
+            <p>My own inbox, cleaned in one morning: AI read and proposed, I made every routing decision. A worked example of the line between the two.</p>
+            <a class="pdf" href="work/25_where-ai-belongs.pdf" target="_blank" rel="noopener">Open the card (PDF)</a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="work/13_story-engine-library.pdf" target="_blank" rel="noopener"><img src="work/thumbs/13_story-engine-library.jpg" width="827" height="607" loading="lazy" alt="First page of the card: The Story-Engine Library"></a>
+          <div class="b">
+            <h3>The Story-Engine Library</h3>
+            <p>A large storytelling corpus turned into a library of 95 story mechanics, which then drives original stories without structural repetition.</p>
+            <a class="pdf" href="work/13_story-engine-library.pdf" target="_blank" rel="noopener">Open the card (PDF)</a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="work/29_ai-image-video-method.pdf" target="_blank" rel="noopener"><img src="work/thumbs/29_ai-image-video-method.jpg" width="827" height="607" loading="lazy" alt="First page of the card: The Unknown Heir: an AI short film, made as a system"></a>
+          <div class="b">
+            <h3>The Unknown Heir: an AI short film, made as a system</h3>
+            <p>Made on Higgsfield, August 2026: the look locked on stills, every shot anchored on approved references, every keeper logged, then written up as a method a team can run.</p>
+            <a class="pdf" href="work/29_ai-image-video-method.pdf" target="_blank" rel="noopener">Open the card (PDF)</a>
+          </div>
+        </div>
+      </div></div>
+      <a class="cta" style="margin-top:64px" href="index.html">Back to the main page</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Hari Paruchuri · tihnkering</div>
+</footer>
+
+</body>
+</html>
